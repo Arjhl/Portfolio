@@ -1,0 +1,278 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+}
+
+:root{
+  --primary : #191414;
+  --pitch-black : #000;
+  --secondary:#5F5F5F;
+  --white:#ffffff;
+  --green:#1DB954;
+  --font-secondary : #A7A7A7;         
+  --red:#FF3B3B;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: SecondaryFont;
+  src: url('../public/fonts/circular-spotify-text-font//CircularSpotifyText-Light.otf');
+}
+
+@font-face {
+  font-family: Main;
+  src: url('../public/fonts/circular-spotify-text-font/CircularSpotifyText-Bold.otf');
+}
+@font-face {
+  font-family: SecondaryHeading;
+  src: url('../public/fonts/circular-spotify-text-font/CircularSpotifyText-Medium.otf');
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--pitch-black);
+  color: var(--white);
+}
+
+.accentGreen{
+  background-color: var(--green);
+}
+.accentRed{
+  background-color: var(--red) ;
+}
+.secondaryhead{
+  font-family: SecondaryHeading;
+}
+
+.custom{
+  display: grid;
+  grid-template-columns:  15vw 15vw 15vw 15vw;
+  grid-template-rows: 10vh 10vh 14vh 16vh 12vh 10vh;
+  padding:2vh;
+  border-radius: 10px;
+  background-color: var(--primary);
+  font-family: SecondaryFont;
+  font-weight: 600;
+}
+
+.item{
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  transition: all .3s ease-in-out;
+}
+
+
+.item-1{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /* padding: 0 !important; */
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-2{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+.item-3{
+  grid-column-start: 1;
+  grid-column-end:3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.item-4{
+  grid-column-start: 3;
+  grid-column-end:5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  background-color: var(--secondary);
+}
+
+.item-5{
+  grid-column-start: 1;
+  grid-column-end:3;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  background-color: var(--secondary);
+
+}
+.item-6{
+  grid-column-start: 3;
+  grid-column-end:4;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  background-color: var(--white);
+  font-family: Main;
+  color: var(--primary) !important;
+  
+}
+.item-7{
+  grid-column-start: 4;
+  grid-column-end:5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background-color: var(--secondary);
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  font-family: Main;
+  font-size: 4vh;
+display: flex;
+justify-content: center;
+align-items: center;
+  
+}
+
+.item-7:hover{
+  background-color: var(--white);
+  color: #000;
+}
+.item-8{
+  grid-column-start: 4;
+  grid-column-end:5;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.head{
+  font-family: Main;
+  font-size: 9vh;
+  text-align: center;
+  padding: 0 !important;
+  line-height: 1em;
+}
+.mainHead {
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 1.5em;
+  font-family: SecondaryHeading;
+}
+
+.profile{
+  height: 100%;
+
+}
+.profile_image{
+  height: 100%;
+  object-fit: cover;
+  clip-path: circle();
+}
+
+.projectCard{
+  background-color: var(--pitch-black);
+  border-radius: 10px;
+}
+
+.projectImage{
+  object-fit: cover;
+  clip-path: circle();
+}
+.description{
+  padding: 2px;
+  font-family: SecondaryFont;
+}
+
+.techstack{
+  font-family: SecondaryFont;
+  color: var(--font-secondary);
+
+}
+.generalHead {
+  font-family: Main;
+  color: var(--white) !important;
+}
+.projectGrid{
+  height: 90%; 
+}
+
+.aboutGrid{
+  height: 90%;
+}
+
+.social-icon{
+  height: 3.5vh;
+  width: 3.5vh;
+  padding: .4vh;
+  background-color: var(--secondary);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.social-icon:hover{
+  background-color: var(--white);
+}
+.projectLinks{
+  color: var(--green);
+  font-size: .8em;
+}
+.projectLinks:hover{
+  text-decoration: underline;
+}
+
+@media (max-width:600px) {
+  body{
+    height: fit-content;
+  }
+  .custom{
+    margin: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: fit-content;
+    padding: 0;
+  }
+
+  .head{
+   font-size: 6vh; 
+  }
+  .mainHead{
+    font-size: 2vh;
+  }
+  .item-2{
+    height: 20vh;
+  }
+  .item-5{
+    max-height: 50vh;
+  }
+  .projectGrid{
+    height: 42vh;
+  }
+  .projectCard{
+    border-radius: 5px;
+  }
+  
+}
+
