@@ -1,5 +1,5 @@
 import Link from "next/link";
-import projectDefault from "../../public/Valorant.svg";
+import Image from "next/image";
 
 const projectsList: Array<any> = [
   {

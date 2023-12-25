@@ -22,9 +22,10 @@ const About = () => {
   return (
     <div className=" overflow-scroll aboutGrid no-scrollbar relative flex flex-col gap-2 sm:my-2 my-1">
       <p className="sm:text-base text-sm">
-        I'm a fullstack dev , building websites with tools like React and
-        Node.js (fullstack ftw!). I've also tinkered with Android development
-        and Web3. Lately, I've been intrigued by Machine Learning and LLMs.
+        I&apos;m a fullstack dev , building websites with tools like React and
+        Node.js (fullstack ftw!). I&apos;ve also tinkered with Android
+        development and Web3. Lately, I&apos;ve been intrigued by Machine
+        Learning and LLMs.
       </p>
 
       <div className="flex justify-start gap-2 items-center">
