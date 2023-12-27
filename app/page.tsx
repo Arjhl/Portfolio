@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Image from "next/image";
 import Degree from "../public/degree.svg";
 import Contact from "./components/Contact";
+import ResumeButton from "./components/ResumeButton";
 
 export default async function Home() {
   console.log();
@@ -32,8 +33,8 @@ export default async function Home() {
           <PhotoCard />
         </div>
         <div
-          className={`item item-3 ${
-            data.data.discord_status == "online" ? "accentGreen" : "accentRed"
+          className={`item item-3 relative ${
+            data.data.discord_status === "online" ? "accentGreen" : "accentRed"
           }`}
         >
           <Activity
@@ -56,7 +57,7 @@ export default async function Home() {
           <p className="text-sm py-2">
             <span className="secondaryhead">Bachelor of Engineering</span> in
             Information Science [2020-24] <br />
-            CGPA : 8.2 , <br />
+            CGPA : 8.2 <br />
             Malnad College of Engineering,Hassan.
           </p>
           <Image
@@ -66,7 +67,7 @@ export default async function Home() {
           />
         </div>
         <div className="item item-7">
-          <h1>Resume📄</h1>
+          <ResumeButton />
         </div>
         <div className="item item-8">
           <Contact />

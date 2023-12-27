@@ -116,7 +116,10 @@ body{
   grid-column-end:5;
   grid-row-start: 3;
   grid-row-end: 5;
-  background-color: var(--secondary);
+  background-color: var(--pitch-black);
+}
+.aboutdescription{
+  color: var(--font-secondary);
 }
 
 .item-5{
@@ -230,7 +233,6 @@ align-items: center;
   cursor: pointer;
   transition: all .3s ease-in-out;
 }
-
 .social-icon:hover{
   background-color: var(--white);
 }

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const projectsList: Array<any> = [
   {
@@ -27,25 +26,18 @@ const projectsList: Array<any> = [
     Techstack: ["Node", "MongoDb", "Socket.io", "React.js", "Multer"],
   },
   {
-    ProjectName: "Decentralised Twiiter Clone",
+    ProjectName: "Decentralised Twitter Clone",
     Description: "A sample dapp using ethers.js/hardhat.",
     GithubLink: "https://github.com/Arjhl/twittercloneDapp",
     Techstack: ["Node", "Ethers.js", "hardhat", "React.js", "Alchemy"],
   },
   {
     ProjectName: "Enigma'23 website",
-    Description: "Website for Engima'23 event",
+    Description: "Website for Enigma'23 event",
     GithubLink: "https://github.com/Arjhl/enigma23",
     liveLink: "https://enigma23.in",
     Picture: "https://enigma23.in/assets/logo_enigma-ea3d92e0.png",
     Techstack: ["React"],
-  },
-
-  {
-    ProjectName: "Decentralised Twiiter Clone",
-    Description: "A sample dapp using ethers.js/hardhat.",
-    GithubLink: "https://github.com/Arjhl/twittercloneDapp",
-    Techstack: ["Node", "Ethers.js", "hardhat", "React.js", "Alchemy"],
   },
   {
     ProjectName: "2048 Game",
@@ -56,7 +48,7 @@ const projectsList: Array<any> = [
   },
   {
     ProjectName: "Enigma'22 website",
-    Description: "Website for Engima'22 event built using basic web tech.",
+    Description: "Website for Enigma'22 event built using basic web tech.",
     GithubLink: "https://github.com/Arjhl/Enigma22",
     liveLink: "https://arjhl.github.io/Enigma22/",
     Techstack: ["HTML", "js", "css"],
@@ -66,18 +58,18 @@ const projectsList: Array<any> = [
     ProjectName: "Weather Diary (Ongoing)",
     Description:
       "A sample android app using Firestore for both images and content.",
-    GithubLink: "",
+    GithubLink: "https://github.com/Arjhl/WeatherDiary",
     Techstack: ["Java", "Firestore"],
   },
   {
     ProjectName: "SmoothPay",
     Description:
-      "A sample android app using Kotlin which is a upi contact-book.",
+      "A sample android app using Kotlin which works as a upi contact-book.",
     GithubLink: "https://github.com/Arjhl/SmoothPay",
     Techstack: ["Kotlin", "Android File System"],
   },
   {
-    ProjectName: "MalnadTechnicalClucWebsite",
+    ProjectName: "The Malnad Technical Club Website",
     Description: "Website for The Malnad Technical Club",
     GithubLink: "https://github.com/Arjhl/ClubWebsite",
     liveLibk: "https://arjhl.github.io/ClubWebsite/",
@@ -110,7 +102,7 @@ const Projects = () => {
               )}
               <h1 className="generalHead">{p.ProjectName}</h1>
             </div>
-            <p className="description text-sm max-w-sm break-words">
+            <p className="description text-sm max-w-md break-words">
               {p.Description}
             </p>
 
