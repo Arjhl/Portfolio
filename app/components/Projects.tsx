@@ -51,7 +51,7 @@ const projectsList: Array<any> = [
     Description: "Website for Enigma'22 event built using basic web tech.",
     GithubLink: "https://github.com/Arjhl/Enigma22",
     liveLink: "https://arjhl.github.io/Enigma22/",
-    Techstack: ["HTML", "js", "css"],
+    Techstack: ["HTML", "Javascript", "CSS"],
   },
 
   {
@@ -74,7 +74,7 @@ const projectsList: Array<any> = [
     GithubLink: "https://github.com/Arjhl/ClubWebsite",
     liveLibk: "https://arjhl.github.io/ClubWebsite/",
     Picture: "https://arjhl.github.io/ClubWebsite/images/mtclogo.png",
-    Techstack: ["HTML", "Javascript", "css"],
+    Techstack: ["HTML", "Javascript", "CSS"],
   },
 ];
 
